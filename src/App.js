@@ -4,6 +4,39 @@ import "slick-carousel/slick/slick-theme.css";
 const products = [
   {
     mainProductFoto: "https://via.placeholder.com/150",
+    nameProduct: "AF",
+    nameProduct2: "Anti-Fog",
+    companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
+    description:
+      "Folia o wysokim połysku i skutecznej ochronie przeciwmgielnej, wydajna już przy 11 mikronach, łatwa w użyciu na liniach flow-pack i L-Sealer, z doskonałymi właściwościami obkurczania. Idealne rozwiązanie dla branży spożywczej i sektorów wymagających niezawodnej ochrony produktów.",
+  },
+  {
+    mainProductFoto: "https://via.placeholder.com/150",
+    nameProduct: "MP",
+    nameProduct2: "Mono Polyethylene",
+    companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
+    description:
+      "Folia termokurczliwa Exlfilm eco®MP zapewnia krótkie czasy obkurczania, maksymalizując wydajność produkcji, a dzięki mocnym zgrzewom i wysokiej wytrzymałości skutecznie chroni produkty podczas szybkiego pakowania i transportu.",
+  },
+
+  {
+    mainProductFoto: "https://via.placeholder.com/150",
+    nameProduct: "BC",
+    nameProduct2: "Hot Needle CF",
+    companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
+    description:
+      "Exlfilm fresh®BC to mikroperforowana folia termokurczliwa o wysokim stopniu obkurczania, idealna do automatycznych linii pakujących, zapewniająca optymalną wymianę gazową i doskonałą jakość produktu, szczególnie w branży piekarniczej.",
+  },
+  {
+    mainProductFoto: "https://via.placeholder.com/150",
+    nameProduct: "BF",
+    nameProduct2: "Hot Needle SW",
+    companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
+    description:
+      "Folia termokurczliwa do szybkich maszyn pakujących, idealna dla branży piekarniczej.Dzięki mikroperforacji zapewnia optymalną wymianę gazową, co pozwala zachować wysoką jakość produktów, a różne wzory perforacji dostosowują się do potrzeb produktu.",
+  },
+  {
+    mainProductFoto: "https://via.placeholder.com/150",
     nameProduct: "BioB",
     nameProduct2: "Bio Based",
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
@@ -12,38 +45,20 @@ const products = [
   },
   {
     mainProductFoto: "https://via.placeholder.com/150",
-    nameProduct: "MP (Mono Polyethylene)",
+    nameProduct: "BP",
+    nameProduct2: "High Speed",
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
+    description:
+      "Folia termokurczliwa zaprojektowana z myślą o szybkich maszynach pakujących, idealna do mrożonej żywności. Gwarantuje nie tylko doskonałą ochronę produktów, ale także zapewnia atrakcyjny wygląd opakowania, podkreślając walory wizualne.",
   },
+
   {
     mainProductFoto: "https://via.placeholder.com/150",
-    nameProduct: "AF (Anti-Fog)",
+    nameProduct: "FP26",
+    nameProduct2: "Performance Shrink Film",
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
-  },
-  {
-    mainProductFoto: "https://via.placeholder.com/150",
-    nameProduct: "BC (Hot Needle - CF)",
-    companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
-  },
-  {
-    mainProductFoto: "https://via.placeholder.com/150",
-    nameProduct: "COŚ",
-    companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
-  },
-  {
-    mainProductFoto: "https://via.placeholder.com/150",
-    nameProduct: "BF (Hot Needle - SW)",
-    companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
-  },
-  {
-    mainProductFoto: "https://via.placeholder.com/150",
-    nameProduct: "BP (High Speed)",
-    companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
-  },
-  {
-    mainProductFoto: "https://via.placeholder.com/150",
-    nameProduct: "FP26 (Performance Shrink Film)",
-    companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
+    description:
+      "folia o wysokiej prędkości z krótkimi czasami obkurczania, zwiększająca wydajność produkcji. Oferuje doskonałą wytrzymałość, odporność na rozerwania i wysoką jakość zgrzewów. Idealna do branż takich jak farmaceutyki, przemysł papierniczy, pralnie przemysłowe i mrożone produkty.",
   },
   {
     mainProductFoto: "https://via.placeholder.com/150",
@@ -356,8 +371,8 @@ function ProductCarousel() {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     initialSlide: 0,
     responsive: [
       {
@@ -386,142 +401,37 @@ function ProductCarousel() {
       },
     ],
   };
+
+  const productsDetail = products;
+  const numProducts = productsDetail.length;
   return (
     <div className="carousel-container">
       <div className="carousel">
         <h2>Nasze Produkty</h2>
         <Slider {...settings}>
-          <div className="box">
-            <div className="carousel-card">
-              <div className="carousel-card-image">
-                <img src="images/AFk.jpg" alt="AF" />
-                <div class="logo-container">
+          {products.map((product, index) => (
+            <div className="box" key={index}>
+              <div className="carousel-card">
+                <div className="carousel-card-image">
                   <img
-                    src="images/MainLogo-Fibope-Cropped-removebg-preview.png"
-                    alt="Logo firmy"
+                    src={product.mainProductFoto}
+                    alt={product.nameProduct}
                   />
+                  <div class="logo-container">
+                    <img src={product.companyLogo} alt="Logo firmy" />
+                  </div>
                 </div>
-              </div>
-              <div className="carousel-main-name">
-                AF <span id="text-italic">Anti-Fog</span>
-              </div>
-              <div className="carousel-card-heading">
-                Folia termokurczliwa o wysokim połysku i bardzo skutecznej
-                ochronie przeciwmgielnej. Wydajna przy grubości 11 mikronów.
-                Łatwa w użyciu na liniach pakujących typu flow-pack i L-sealer.
-                Charakteryzuje się dobrym skurczem.
-              </div>
-              <button id="carousel-card-button">Dowiedz się więcej</button>
-            </div>
-          </div>
-
-          <div className="box">
-            <div className="carousel-card">
-              <div className="carousel-card-image">
-                <img src="images/AFk.jpg" alt="AF" />
-                <div class="logo-container">
-                  <img
-                    src="images/MainLogo-Fibope-Cropped-removebg-preview.png"
-                    alt="Logo firmy"
-                  />
+                <div className="carousel-main-name">
+                  {product.nameProduct}{" "}
+                  <span id="text-italic"> {product.nameProduct2}</span>
                 </div>
-              </div>
-              <div className="carousel-main-name">
-                AF <span id="text-italic">Anti-Fog</span>
-              </div>
-              <div className="carousel-card-heading">
-                Folia termokurczliwa o wysokim połysku i bardzo skutecznej
-                ochronie przeciwmgielnej. Wydajna przy grubości 11 mikronów.
-                Łatwa w użyciu na liniach pakujących typu flow-pack i L-sealer.
-                Charakteryzuje się dobrym skurczem.
-              </div>
-              <button id="carousel-card-button">Dowiedz się więcej</button>
-            </div>
-          </div>
-          <div className="box">
-            <div className="carousel-card">
-              <div className="carousel-card-image">
-                <img src="images/AFk.jpg" alt="AF" />
-                <div class="logo-container">
-                  <img
-                    src="images/MainLogo-Fibope-Cropped-removebg-preview.png"
-                    alt="Logo firmy"
-                  />
+                <div className="carousel-card-heading">
+                  {product.description}
                 </div>
+                <button id="carousel-card-button">Dowiedz się więcej</button>
               </div>
-              <div className="carousel-main-name">
-                AF <span id="text-italic">Anti-Fog</span>
-              </div>
-              <div className="carousel-card-heading">
-                Folia termokurczliwa o wysokim połysku i bardzo skutecznej
-                ochronie przeciwmgielnej. Wydajna przy grubości 11 mikronów.
-                Łatwa w użyciu na liniach pakujących typu flow-pack i L-sealer.
-                Charakteryzuje się dobrym skurczem.
-              </div>
-              <button id="carousel-card-button">Dowiedz się więcej</button>
             </div>
-          </div>
-          <div className="box">
-            <div className="carousel-card">
-              <div className="carousel-card-image">
-                <img src="images/AFk.jpg" alt="AF" />
-                <div class="logo-container">
-                  <img
-                    src="images/MainLogo-Fibope-Cropped-removebg-preview.png"
-                    alt="Logo firmy"
-                  />
-                </div>
-              </div>
-              <div className="carousel-main-name">
-                AF <span id="text-italic">Anti-Fog</span>
-              </div>
-              <div className="carousel-card-heading">
-                Folia termokurczliwa o wysokim połysku i bardzo skutecznej
-                ochronie przeciwmgielnej. Wydajna przy grubości 11 mikronów.
-                Łatwa w użyciu na liniach pakujących typu flow-pack i L-sealer.
-                Charakteryzuje się dobrym skurczem.
-              </div>
-              <button id="carousel-card-button">Dowiedz się więcej</button>
-            </div>
-          </div>
-          <div className="box">
-            <div className="carousel-card">
-              <div className="carousel-card-image">
-                <img src="images/AFk.jpg" alt="AF" />
-                <div class="logo-container">
-                  <img
-                    src="images/MainLogo-Fibope-Cropped-removebg-preview.png"
-                    alt="Logo firmy"
-                  />
-                </div>
-              </div>
-              <div className="carousel-main-name">
-                AF <span id="text-italic">Anti-Fog</span>
-              </div>
-              <div className="carousel-card-heading">
-                Folia termokurczliwa o wysokim połysku i bardzo skutecznej
-                ochronie przeciwmgielnej. Wydajna przy grubości 11 mikronów.
-                Łatwa w użyciu na liniach pakujących typu flow-pack i L-sealer.
-                Charakteryzuje się dobrym skurczem.
-              </div>
-              <button id="carousel-card-button">Dowiedz się więcej</button>
-            </div>
-          </div>
-          <div className="box">
-            <h3>1</h3>
-          </div>
-          <div className="box">
-            <h3>2</h3>
-          </div>
-          <div className="box">
-            <h3>3</h3>
-          </div>
-          <div className="box">
-            <h3>4</h3>
-          </div>
-          <div className="box">
-            <h3>5</h3>
-          </div>
+          ))}
         </Slider>
       </div>
     </div>
