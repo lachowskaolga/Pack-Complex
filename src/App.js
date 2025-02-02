@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const products = [
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/AF.jpg",
     nameProduct: "AF",
     nameProduct2: "Anti-Fog",
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
@@ -11,7 +11,7 @@ const products = [
       "Folia o wysokim połysku i skutecznej ochronie przeciwmgielnej, wydajna już przy 11 mikronach, łatwa w użyciu na liniach flow-pack i L-Sealer, z doskonałymi właściwościami obkurczania. Idealne rozwiązanie dla branży spożywczej i sektorów wymagających niezawodnej ochrony produktów.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/bio.jpg",
     nameProduct: "MP",
     nameProduct2: "Mono Polyethylene",
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
@@ -20,7 +20,7 @@ const products = [
   },
 
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/BC_Donut.jpg",
     nameProduct: "BC",
     nameProduct2: "Hot Needle CF",
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
@@ -28,7 +28,7 @@ const products = [
       "Exlfilm fresh®BC to mikroperforowana folia termokurczliwa o wysokim stopniu obkurczania, idealna do automatycznych linii pakujących, zapewniająca optymalną wymianę gazową i doskonałą jakość produktu, szczególnie w branży piekarniczej.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/bread.jpg",
     nameProduct: "BF",
     nameProduct2: "Hot Needle SW",
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
@@ -36,7 +36,7 @@ const products = [
       "Folia termokurczliwa do szybkich maszyn pakujących, idealna dla branży piekarniczej.Dzięki mikroperforacji zapewnia optymalną wymianę gazową, co pozwala zachować wysoką jakość produktów, a różne wzory perforacji dostosowują się do potrzeb produktu.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/bio.jpg",
     nameProduct: "BioB",
     nameProduct2: "Bio Based",
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
@@ -44,7 +44,7 @@ const products = [
       "Folia termokurczliwa Exlfilm eco®BioB pozwala przyspieszyć proces pakowania, zwiększając wydajność produkcji. Zapewnia też solidną ochronę produktów dzięki swojej wytrzymałości i mocnym zgrzewom.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/BP_Pizza.jpg",
     nameProduct: "BP",
     nameProduct2: "High Speed",
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
@@ -53,7 +53,7 @@ const products = [
   },
 
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/FP26-Main_High.jpg",
     nameProduct: "FP26",
     nameProduct2: "Performance Shrink Film",
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
@@ -61,19 +61,28 @@ const products = [
       "folia o wysokiej prędkości z krótkimi czasami obkurczania, zwiększająca wydajność produkcji. Oferuje doskonałą wytrzymałość, odporność na rozerwania i wysoką jakość zgrzewów. Idealna do branż takich jak farmaceutyki, przemysł papierniczy, pralnie przemysłowe i mrożone produkty.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
-    nameProduct: "QSL (Quick Shrink Film)",
+    mainProductFoto: "images/QSL-Main_High.jpg",
+    nameProduct: "QSL",
+    nameProduct2: "Quick Shrink Film",
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
+    description:
+      "Szybkoschnąca folia termokurczliwa o wyjątkowo wysokim współczynniku kurczenia, zapewniająca doskonały efekt 'bez zmarszczeń. Ta folia doskonale sprawdza się w przypadku najbardziej wymagających produktów, od kalendarzy po pudełka czekoladek. Właściwości Exlfilm®QSL są niekorozyjne.",
   },
   {
-    mainProductFoto: "",
-    nameProduct: "HG (High Gauge)",
+    mainProductFoto: "images/HG-Main_High.jpg",
+    nameProduct: "HG",
+    nameProduct2: "High Gauge",
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
+    description:
+      "Folia termokurczliwa, zapewniająca wysoką wydajność produkcji dzięki krótkim czasom uszczelniania. Charakteryzuje się dużą wytrzymałością, odpornością na rozdarcia oraz doskonałymi właściwościami optycznymi, idealna do przemysłów farmaceutycznego, papierniczego oraz mrożonych produktów.",
   },
   {
     mainProductFoto: "https://via.placeholder.com/150",
-    nameProduct: "LSF (Low Shrink Force)",
+    nameProduct: "LSF",
+    nameProduct2: "Low Shrink Force",
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
+    description:
+      "Folia posiada niską siłę kurczenia, co sprawia, że delikatne produkty zachowują swój kształt. Dzięki niższej temperaturze kurczenia, jest idealnym rozwiązaniem dla produktów wymagających łagodnego procesu pakowania. Produkt charakteryzuje się bardzo wysoką odpornością na uszkodzenia i zapewnia doskonałą zdolność kurczenia.",
   },
   {
     mainProductFoto: "https://via.placeholder.com/150",

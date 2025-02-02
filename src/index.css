@@ -838,10 +838,6 @@ button,
   position: relative;
 }
 
-.carousel:hover .box {
-  transform: scale(0.9);
-  filter: blur(3px);
-}
 .carousel:hover .box:hover {
   transform: scale(0.95);
   filter: none;
@@ -927,7 +923,7 @@ button,
   margin: 0 !important;
 }
 .carousel-card-image {
-  background-color: #333333;
+  background-color: #ffffff;
   width: 100%;
   cursor: pointer;
   height: 10rem;
@@ -948,6 +944,7 @@ button,
   border-top-right-radius: 15px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px; /* Dopasowanie zaokrągleń */
+  margin-bottom: 5px;
 }
 .logo-container {
   position: absolute;
