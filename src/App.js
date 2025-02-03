@@ -58,7 +58,7 @@ const products = [
     nameProduct2: "Performance Shrink Film",
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
     description:
-      "folia o wysokiej prędkości z krótkimi czasami obkurczania, zwiększająca wydajność produkcji. Oferuje doskonałą wytrzymałość, odporność na rozerwania i wysoką jakość zgrzewów. Idealna do branż takich jak farmaceutyki, przemysł papierniczy, pralnie przemysłowe i mrożone produkty.",
+      "Folia o wysokiej prędkości z krótkimi czasami obkurczania, co zwiększa wydajność produkcji. Oferuje doskonałą wytrzymałość, odporność na rozerwania i wysoką jakość zgrzewów. Idealna do branż takich jak farmaceutyki, przemysł papierniczy i mrożone produkty.",
   },
   {
     mainProductFoto: "images/QSL-Main_High.jpg",
@@ -66,7 +66,7 @@ const products = [
     nameProduct2: "Quick Shrink Film",
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
     description:
-      "Szybkoschnąca folia termokurczliwa o wyjątkowo wysokim współczynniku kurczenia, zapewniająca doskonały efekt 'bez zmarszczeń. Ta folia doskonale sprawdza się w przypadku najbardziej wymagających produktów, od kalendarzy po pudełka czekoladek. Właściwości Exlfilm®QSL są niekorozyjne.",
+      "Szybkoschnąca folia termokurczliwa o wyjątkowo wysokim współczynniku kurczenia, zapewniająca doskonały efekt 'bez zmarszczeń'. Doskonale sprawdza się w przypadku najbardziej wymagających produktów, od kalendarzy po pudełka czekoladek.",
   },
   {
     mainProductFoto: "images/HG-Main_High.jpg",
@@ -74,88 +74,118 @@ const products = [
     nameProduct2: "High Gauge",
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
     description:
-      "Folia termokurczliwa, zapewniająca wysoką wydajność produkcji dzięki krótkim czasom uszczelniania. Charakteryzuje się dużą wytrzymałością, odpornością na rozdarcia oraz doskonałymi właściwościami optycznymi, idealna do przemysłów farmaceutycznego, papierniczego oraz mrożonych produktów.",
+      "Folia termokurczliwa, zapewniająca wysoką wydajność produkcji dzięki krótkim czasom uszczelniania. Charakteryzuje się dużą wytrzymałością, odpornością na rozdarcia oraz doskonałymi właściwościami optycznymi.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/LTG-Main_High.jpg",
     nameProduct: "LSF",
     nameProduct2: "Low Shrink Force",
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
     description:
-      "Folia posiada niską siłę kurczenia, co sprawia, że delikatne produkty zachowują swój kształt. Dzięki niższej temperaturze kurczenia, jest idealnym rozwiązaniem dla produktów wymagających łagodnego procesu pakowania. Produkt charakteryzuje się bardzo wysoką odpornością na uszkodzenia i zapewnia doskonałą zdolność kurczenia.",
+      "Folia posiada niską siłę kurczenia, co sprawia, że delikatne produkty zachowują swój kształt. Dzięki niższej temperaturze kurczenia, jest idealnym rozwiązaniem dla produktów wymagających łagodnego procesu pakowania i folii z bardzo wysoką odpornością na uszkodzenia.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
-    nameProduct: "LTG (Light Gauge)",
+    mainProductFoto: "images/LTG-Main_High.jpg",
+    nameProduct: "LTG",
+    nameProduct2: "Light Gauge",
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
+    description:
+      "Główne cechy to niska grubość, wyższa wytrzymałość na rozciąganie oraz dłuższa długość rolki, co zmniejsza przestoje maszyn. Dzięki temu poprawia się wydajność i oszczędność kosztów, a także wymaga mniej miejsca do przechowywania.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
-    nameProduct: "PL (Crosslinking Shrink Film)",
+    mainProductFoto: "images/PL.png",
+    nameProduct: "PL",
+    nameProduct2: "Crosslinking Shrink Film",
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
+    description:
+      "Wysoka wytrzymałość na rozciąganie, doskonała odporność na przebicia, zapewnia bardzo mocne uszczelnienie, jest wszechstronna i może być używana w różnych zastosowaniach, a także charakteryzuje się odpornością na poślizg w wysokich temperaturach.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/1B.png",
     nameProduct: "B-Nat® O",
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
+    description:
+      "B-Nat® O to ultracienka folia opakowaniowa z zielonego polietylenu, w którym ponad 40% pochodzi z etanolu z trzciny cukrowej, co zmniejsza ślad węglowy. Jest recyklingowalna, zapewnia doskonałą prezentację półkową oraz wysoką spójność, idealna do multipakowania i maszyn wysokiej prędkości.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/bri.png",
     nameProduct: "BRi",
-    companyLogo: "images/images/Logo-Bollore-Films-COULEUR.png",
+    companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
+    description:
+      "Folia charakteryzuje się wysoką siłą spójności, jest bardzo cienka, co sprzyja oszczędnościom zasobów. Ponadto jest recyklingowalna i doskonale nadaje się do pakowania zarówno produktów przemysłowych, jak i konsumpcyjnych.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/BTT.png",
     nameProduct: "BTT +90 - 125",
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
+    description:
+      "Folia charakteryzuje się doskonałą kurczliwością oraz szybkim uszczelnianiem przy niskiej temperaturze. Posiada właściwości zmniejszające tarcie (hot slip). Zwiększona sztywność optymalizuje jej przejście przez maszyny o wysokiej prędkości, a poprawiona jakość optyczna zapewnia doskonałą prezentację na półce.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/110.png",
     nameProduct: "BTTX 110",
-    companyLogo: "Logo-Bollore-Films-COULEUR.png",
+    companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
+    description:
+      "Folia oferuje szerokie okno robocze, umożliwiając jej użycie na szerokiej gamie urządzeń. Posiada te same właściwości mechaniczne co tradycyjna folia 15µm, a jej wyjątkowa odporność na uderzenia, wysoka siła uszczelniania i doskonała siła spójności zapewniają jej niezawodność w różnych zastosowaniach.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/130.png",
     nameProduct: "BTTXF 130",
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
+    description:
+      "Folia charakteryzuje się niską siłą kurczenia, co zapobiega zniekształceniu elastycznych produktów oraz wysokim procentem wolnego kurczenia przy niskiej temperaturze. Jest także odporna na rozdarcia i rozciąganie, a jej szerokie okno robocze sprawia, że może być stosowana w różnych urządzeniach.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/BZN.png",
     nameProduct: "BZN",
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
+    description:
+      "Folia cechuje się wyjątkową wytrzymałością i odpornością na przebicia, a jej szerokie okno robocze umożliwia stosowanie na różnych urządzeniach. Zapewnia również mocne uszczelnienia w różnych warunkach przetwarzania.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/BRX.png",
     nameProduct: "BRX",
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
+    description:
+      "Niska siła kurczenia eliminuje odkształcenia cienkich produktów, a folia jest usieciowana dla zwiększenia wytrzymałości i twardości. Charakteryzuje się szerokim zakresem roboczym na większości urządzeń uszczelniających, idealnie nadaje się do produktów o nieregularnym kształcie lub ostrych krawędziach.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/BY.png",
     nameProduct: "BY",
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
+    description:
+      "Szybkie uszczelnianie i efektywność w trakcie podgrzewania, właściwości 'hot slip' po kurczeniu. Optymalna wydajność i produktywność przy wyjątkowym uzysku, niskie temperatury oraz mniejsze zużycie energii przy wysokim stopniu kurczenia.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/BRN.png",
     nameProduct: "BRN",
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
+    description:
+      "Ultracienka folia na bazie bi-orientowanego polietylenu (BO-PE), przeznaczona do pakowania delikatnych, elastycznych produktów, takich jak artykuły papiernicze i tekstylia. W warunkach wysokiej prędkości przetwarzania, BRN zapewnia wysoką wydajność przy aplikacjach wymagających niskiego skurczu, kontrolując siły skurczu w szerszym zakresie temperatur niż tradycyjne folie termokurczliwe.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/BX.png",
     nameProduct: "BXS",
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
+    description:
+      "Folia oferuje wysoką wytrzymałość spójności, co czyni ją idealną do zastosowań multipack, oraz dużą sztywność dla optymalnej wydajności maszyn. Została zaprojektowana do współpracy z maszynami do uszczelniania z jonizacją, zapewniając wyjątkową jakość optyczną.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/BXX.png",
     nameProduct: "BXX",
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
+    description:
+      "Folia specjalnie dedykowana do uszczelniania elektrostatycznego, charakteryzująca się wyjątkową płaskością, sztywnością i właściwościami antypoślizgowymi, co zapewnia wysoką wydajność maszyn. Oferuje także doskonałe właściwości optyczne.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/BEC.png",
     nameProduct: "BE-C",
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
+    description:
+      "Folia charakteryzuje się wszechstronnością, zoptymalizowaną wstępną perforacją, która umożliwia kontrolowane kurczenie się i łatwiejszą konfigurację. Posiada wysoką wytrzymałość spoiny oraz dobre właściwości optyczne.",
   },
   {
-    mainProductFoto: "https://via.placeholder.com/150",
+    mainProductFoto: "images/bg-top.jpg",
     nameProduct: "PC-Standard",
     companyLogo: "images/PCSTANDARD.png",
   },
@@ -278,6 +308,58 @@ function Navbar() {
                   alt="logof"
                 />
               </div>
+              <div className="container-dropdown">
+                <a href="#">B-Nat® O</a>
+                <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
+              </div>
+              <div className="container-dropdown">
+                <a href="#">BRi</a>
+                <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
+              </div>
+              <div className="container-dropdown">
+                <a href="#">BTT +90-125</a>
+                <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
+              </div>
+              <div className="container-dropdown">
+                <a href="#">BTTX 110</a>
+                <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
+              </div>
+              <div className="container-dropdown">
+                <a href="#">BTTXF 130</a>
+                <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
+              </div>
+              <div className="container-dropdown">
+                <a href="#">BZN</a>
+                <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
+              </div>
+              <div className="container-dropdown">
+                <a href="#">BRX</a>
+                <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
+              </div>
+              <div className="container-dropdown">
+                <a href="#">BY</a>
+                <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
+              </div>
+              <div className="container-dropdown">
+                <a href="#">BRN</a>
+                <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
+              </div>
+              <div className="container-dropdown">
+                <a href="#">BXS</a>
+                <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
+              </div>
+              <div className="container-dropdown">
+                <a href="#">BXX</a>
+                <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
+              </div>
+              <div className="container-dropdown">
+                <a href="#">BE-C </a>
+                <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
+              </div>
+              <div className="container-dropdown">
+                <a href="#">PC-Standard</a>
+                <img src="images/logo.png" alt="logopc" id="logopc" />
+              </div>
             </div>
           </div>
           <a href="#">O Nas</a>
@@ -337,7 +419,13 @@ function MainPage() {
           </div>
         </div>
         <div className="map">
-          <img src="images/map.png"></img>
+          <a
+            href="https://www.google.pl/maps/place/Pack+Complex+Sp%C3%B3%C5%82ka+Jawna/@51.368085,21.1919035,17z/data=!3m1!4b1!4m6!3m5!1s0x47185e7eb71fb711:0xf9e67fee98374455!8m2!3d51.3680817!4d21.1944784!16s%2Fg%2F1w97t3_v?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+            target="blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/map.png"></img>
+          </a>
         </div>
       </div>
     </>
@@ -437,7 +525,7 @@ function ProductCarousel() {
                 <div className="carousel-card-heading">
                   {product.description}
                 </div>
-                <button id="carousel-card-button">Dowiedz się więcej</button>
+                <button id="carousel-card-button">Więcej...</button>
               </div>
             </div>
           ))}
@@ -528,6 +616,7 @@ function AboutUs1() {
               </div>
             </div>
           </div>
+          <div id="line"></div>
         </div>
       </div>
     </>
