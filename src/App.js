@@ -371,6 +371,12 @@ function Navbar() {
 }
 
 function MainPage() {
+  function moveToProducts() {
+    const productsSection = document.getElementById("products-section");
+    if (productsSection) {
+      productsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  }
   return (
     <>
       <div className="container-main-page">
@@ -378,7 +384,7 @@ function MainPage() {
           <div
             className="main-card"
             style={{
-              backgroundImage: "url(images/bgl.png)",
+              backgroundImage: "url(images/bglight.png)",
               backgroundSize: "cover",
               backgroundPosition: "center",
               width: "100%", // Upewnij się, że szerokość jest 100%
@@ -392,8 +398,9 @@ function MainPage() {
                   <span id="bold-text">Twoje opakowania</span>, nasza pasja.
                 </h2>
                 <div className="container-button">
-                  <button id="button">Poznaj naszą ofertę</button>
-                  <button id="button-text"> Dowiedz się więcej</button>
+                  <button id="button" onClick={moveToProducts}>
+                    Poznaj naszą ofertę
+                  </button>
                 </div>
                 <div class="statistics-container">
                   <div class="stat-item">
@@ -502,7 +509,7 @@ function ProductCarousel() {
   const productsDetail = products;
   const numProducts = productsDetail.length;
   return (
-    <div className="carousel-container">
+    <div className="carousel-container" id="products-section">
       <div className="carousel">
         <h2>Nasze Produkty</h2>
         <Slider {...settings}>
@@ -530,6 +537,7 @@ function ProductCarousel() {
             </div>
           ))}
         </Slider>
+        <div id="line2"></div>
       </div>
     </div>
   );

@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:wght@300&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:wght@300&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:wght@300&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:wght@300&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 html,
 body {
   height: 100%;
@@ -27,7 +30,6 @@ body {
   height: 40px;
   margin-left: 40px;
   align-items: center;
-
   color: #000000;
 }
 .menu {
@@ -36,7 +38,7 @@ body {
   width: 100%;
   justify-content: flex-end;
   align-items: flex-end;
-  right: 80px;
+  right: 125px;
   gap: 30px;
   align-items: center;
 }
@@ -45,7 +47,8 @@ body {
   margin-bottom: 10px;
   margin-left: 50px;
   gap: 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
+
   text-decoration: none;
   color: #000000;
   font-size: 18px;
@@ -73,8 +76,7 @@ body {
 .dropdown-menu a {
   color: white;
   margin-left: 10px;
-
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   text-decoration: none;
   color: #000000;
   font-size: 16px;
@@ -87,11 +89,11 @@ body {
 }
 
 .dropdown-menu a:hover {
-  background-color: #c5241f2f;
+  background-color: #c5251f;
   width: 98%;
   z-index: 9998;
   height: auto;
-  color: #000000;
+  color: #ffffff;
   border-radius: 0px;
   -webkit-box-shadow: 3px 8px 18px -7px rgba(231, 231, 231, 1);
   -moz-box-shadow: 3px 8px 18px -7px rgba(231, 231, 231, 1);
@@ -118,9 +120,9 @@ body {
 }
 
 .container-dropdown a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   color: #333333;
   text-decoration: none;
   margin: 5px 5px;
@@ -223,10 +225,10 @@ body {
   margin-left: 4%;
 }
 .main-text h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-size: 4.5vw;
-
-  font-weight: 600;
+  opacity: 100% !important;
+  font-weight: 700;
   margin-top: 5%;
   margin-left: 2%;
   margin-bottom: 0px;
@@ -237,7 +239,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 4.5vw;
 
-  font-weight: 6000;
+  font-weight: 700;
   margin-top: 5px;
   margin-left: 2%;
   margin-bottom: 0px;
@@ -274,8 +276,8 @@ body {
   display: flex;
   flex-direction: row;
 
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 1.2vw;
+  font-family: "Montserrat";
+  font-size: 1.1vw;
   align-items: center;
   font-weight: 300;
   padding: 5%, 5%;
@@ -319,13 +321,13 @@ body {
 }
 
 .cards .card p.tip {
-  font-size: 1vw;
+  font-size: 0.9vw;
   font-weight: 700;
   margin: 5px 20px;
 }
 
 .cards .card p.second-text {
-  font-size: 0.75vw;
+  font-size: 0.7vw;
   margin: 1px 20px;
 }
 
@@ -785,9 +787,10 @@ button,
 
 .section-description {
   margin-left: 35px;
-  font-size: 0.8vw;
+  font-size: 0.9vw;
+  font-weight: 300;
   color: #706b6b;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat";
   margin-top: 0px;
 }
 
@@ -828,8 +831,8 @@ button,
   box-sizing: border-box;
 }
 .carousel {
-  padding: 2rem;
-  margin-top: 10px;
+  padding: 2vw;
+  margin-top: 0px;
   height: auto;
   display: block;
 }
@@ -858,9 +861,9 @@ button,
 .carousel h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5vw;
-  margin-top: 5px;
+  margin-top: 0px;
   margin-left: 2%;
-  text-align: start;
+  text-align: center;
   color: #000;
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -1029,8 +1032,17 @@ button,
 }
 
 #line {
-  width: 92vw; /* 80% szerokości widoku ekranu */
+  width: 93vw; /* 80% szerokości widoku ekranu */
   margin-left: 3%;
+  margin-right: 5%;
+  height: 1.2px; /* Grubość linii */
+  background-color: black; /* Kolor linii */
+  margin-top: 80px; /* Wyrównanie do środka */
+  margin-bottom: 0px;
+}
+#line2 {
+  width: 93vw; /* 80% szerokości widoku ekranu */
+  margin-left: 1%;
   margin-right: 5%;
   height: 1.2px; /* Grubość linii */
   background-color: black; /* Kolor linii */
