@@ -199,7 +199,11 @@ function App() {
       <Cards />
 
       <AboutUs1 />
+      <Line />
       <ProductCarousel />
+      <Line2 />
+      <Form />
+      <Footer />
     </div>
   );
 }
@@ -532,15 +536,21 @@ function ProductCarousel() {
                 <div className="carousel-card-heading">
                   {product.description}
                 </div>
-                <button id="carousel-card-button">Więcej...</button>
+                <button id="carousel-card-button">Więcej informacji</button>
               </div>
             </div>
           ))}
         </Slider>
-        <div id="line2"></div>
       </div>
     </div>
   );
+}
+
+function Line() {
+  return <div id="line"></div>;
+}
+function Line2() {
+  return <div id="line2"></div>;
 }
 
 function AboutUs1() {
@@ -624,10 +634,25 @@ function AboutUs1() {
               </div>
             </div>
           </div>
-          <div id="line"></div>
         </div>
       </div>
     </>
+  );
+}
+
+function Form() {
+  return (
+    <div>
+      <div className="form-main"></div>
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="footer">
+      <p>© 2025 PackComplex | Wszystkie prawa zastrzeżone</p>
+    </footer>
   );
 }
 
