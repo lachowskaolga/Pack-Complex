@@ -642,8 +642,31 @@ function AboutUs1() {
 
 function Form() {
   return (
-    <div>
-      <div className="form-main"></div>
+    <div className="form-main">
+      <div className="left-section">
+        <h2 className="left-section-title">Skontaktuj się z nami!</h2>
+        <p className="left-section-description">
+          Masz pytania lub potrzebujesz pomocy? Wypełnij formularz, a nasz
+          zespół skontaktuje się z Tobą tak szybko, jak to możliwe.
+        </p>
+        <div className="left-section-content">
+          <input className="small-box" placeholder="E-Mail"></input>
+          <input className="large-box" placeholder="Wiadomość..."></input>
+
+          <div className="form-button">Wyślij</div>
+        </div>
+      </div>
+
+      <div className="separator-line"></div>
+
+      <div className="right-section">
+        <div className="image-box"></div>
+        <div className="text-content">
+          <p>TEXTTEXTTEXTTE</p>
+          <p>XTTEXTTEXTTEX</p>
+          <p>TTEXT</p>
+        </div>
+      </div>
     </div>
   );
 }
