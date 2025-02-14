@@ -660,7 +660,9 @@ function Form() {
       <div className="separator-line"></div>
 
       <div className="right-section">
-        <div className="image-box"></div>
+        <div className="image-box">
+          <img src="images/pc_bg_.jpg"></img>
+        </div>
         <div className="text-content">
           <h1>Dane kontaktowe firmy</h1>
           <h5>Pack Complex Lachowski, Różański Spółka Komandytowa</h5>
