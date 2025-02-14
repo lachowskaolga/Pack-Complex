@@ -662,9 +662,12 @@ function Form() {
       <div className="right-section">
         <div className="image-box"></div>
         <div className="text-content">
-          <p>TEXTTEXTTEXTTE</p>
-          <p>XTTEXTTEXTTEX</p>
-          <p>TTEXT</p>
+          <h1>Dane kontaktowe firmy</h1>
+          <h5>Pack Complex Lachowski, Różański Spółka Komandytowa</h5>
+          <p>Ul. Słowackiego 296 26-600 Radom </p>
+          <p>NIP 9482610433 REGON 367309782</p>
+          <p>tel/fax 048 363 00 43 </p>
+          <p>e-mail: biuro@packcomplex.pl</p>
         </div>
       </div>
     </div>
