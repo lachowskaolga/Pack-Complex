@@ -200,15 +200,34 @@ function App() {
 
       <AboutUs1 />
       <Line />
-      <ProductCarousel />
-      <Line2 />
+
       <Form />
+      <ProductCarousel />
       <Footer />
     </div>
   );
 }
 
 function Navbar() {
+  function moveToProducts() {
+    const productsSection = document.getElementById("products-section");
+    if (productsSection) {
+      productsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+  function moveToAboutUs() {
+    const aboutUsSection = document.getElementById("container-about-us");
+    if (aboutUsSection) {
+      aboutUsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+  function moveToContactUs() {
+    const moveToContactUs = document.getElementById("form-main");
+    if (moveToContactUs) {
+      moveToContactUs.scrollIntoView({ behavior: "smooth" });
+    }
+  }
   return (
     <>
       <div className="container-navbar">
@@ -218,156 +237,294 @@ function Navbar() {
         <div className="menu">
           <a href="#">Strona główna </a>
           <div class="dropdown">
-            <a href="#">Produkty</a>
+            <a href="#" onClick={moveToProducts}>
+              Produkty
+            </a>
 
             <div class="dropdown-menu">
               <div className="container-dropdown">
-                <a href="#">AF Anti-Fog</a>
+                <a
+                  href="https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_AF.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  AF Anti-Fog
+                </a>
                 <img
                   src="images/MainLogo-Fibope-Cropped-removebg-preview.png"
                   alt="logof"
                 />
               </div>
               <div className="container-dropdown">
-                <a href="#">BC Hot Needle-CF</a>
+                <a
+                  href="https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_BC.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  BC Hot Needle-CF
+                </a>
                 <img
                   src="images/MainLogo-Fibope-Cropped-removebg-preview.png"
                   alt="logof"
                 />
               </div>
               <div className="container-dropdown">
-                <a href="#">BF Hot Needle-SW</a>
+                <a
+                  href="https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_BF.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  BF Hot Needle-SW
+                </a>
                 <img
                   src="images/MainLogo-Fibope-Cropped-removebg-preview.png"
                   alt="logof"
                 />
               </div>
               <div className="container-dropdown">
-                <a href="#">BioB Bio Based</a>
+                <a href="#" target="blank" rel="noopener noreferrer">
+                  BioB Bio Based
+                </a>
                 <img
                   src="images/MainLogo-Fibope-Cropped-removebg-preview.png"
                   alt="logof"
                 />
               </div>
               <div className="container-dropdown">
-                <a href="#">BP High Speed</a>
+                <a
+                  href="https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_BP.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  BP High Speed
+                </a>
                 <img
                   src="images/MainLogo-Fibope-Cropped-removebg-preview.png"
                   alt="logof"
                 />
               </div>
               <div className="container-dropdown">
-                <a href="#">FP 26 Performance Shrink Film</a>
+                <a
+                  href="https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_FP26.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  FP 26 Performance Shrink Film
+                </a>
                 <img
                   src="images/MainLogo-Fibope-Cropped-removebg-preview.png"
                   alt="logof"
                 />
               </div>
               <div className="container-dropdown">
-                <a href="#">HG High Gauge</a>
+                <a
+                  href="https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_HG.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  HG High Gauge
+                </a>
                 <img
                   src="images/MainLogo-Fibope-Cropped-removebg-preview.png"
                   alt="logof"
                 />
               </div>
               <div className="container-dropdown">
-                <a href="#">LSF Low Shrink Force</a>
+                <a
+                  href="https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_LSF.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  LSF Low Shrink Force
+                </a>
                 <img
                   src="images/MainLogo-Fibope-Cropped-removebg-preview.png"
                   alt="logof"
                 />
               </div>
               <div className="container-dropdown">
-                <a href="#">LTG Light Gauge</a>
+                <a
+                  href="https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_LTG.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  LTG Light Gauge
+                </a>
+                <img
+                  src="images/MainLogo-Fibope-Cropped-removebg-preview.png"
+                  alt="logof"
+                />
+              </div>
+
+              <div className="container-dropdown">
+                <a href="#" target="blank" rel="noopener noreferrer">
+                  MP Mono Polyethylene
+                </a>
                 <img
                   src="images/MainLogo-Fibope-Cropped-removebg-preview.png"
                   alt="logof"
                 />
               </div>
               <div className="container-dropdown">
-                <a href="#">LSF Low Shrink Force</a>
+                <a
+                  href="https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_LSF.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  PL Crosslinking Shrink Film
+                </a>
                 <img
                   src="images/MainLogo-Fibope-Cropped-removebg-preview.png"
                   alt="logof"
                 />
               </div>
               <div className="container-dropdown">
-                <a href="#">MP Mono Polyethylene</a>
+                <a
+                  href="https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_QSL.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  QSL Quick Shrink Film
+                </a>
                 <img
                   src="images/MainLogo-Fibope-Cropped-removebg-preview.png"
                   alt="logof"
                 />
               </div>
               <div className="container-dropdown">
-                <a href="#">PL Crosslinking Shrink Film</a>
-                <img
-                  src="images/MainLogo-Fibope-Cropped-removebg-preview.png"
-                  alt="logof"
-                />
-              </div>
-              <div className="container-dropdown">
-                <a href="#">QSL Quick Shrink Film</a>
-                <img
-                  src="images/MainLogo-Fibope-Cropped-removebg-preview.png"
-                  alt="logof"
-                />
-              </div>
-              <div className="container-dropdown">
-                <a href="#">B-Nat® O</a>
+                <a
+                  href="https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BNAT-O_2020-09.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  B-Nat® O
+                </a>
                 <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
               </div>
               <div className="container-dropdown">
-                <a href="#">BRi</a>
+                <a
+                  href="https://www.bollorefilms.com/wp-content/uploads/2022/09/Bolphane-R3-BRi_V2021-07_uk.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  BRi
+                </a>
                 <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
               </div>
               <div className="container-dropdown">
-                <a href="#">BTT +90-125</a>
+                <a
+                  href="https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BTT_2020-09.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  BTT +90-125
+                </a>
                 <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
               </div>
               <div className="container-dropdown">
-                <a href="#">BTTX 110</a>
+                <a
+                  href="https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BTTX110_2020-09.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  BTTX 110
+                </a>
                 <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
               </div>
               <div className="container-dropdown">
-                <a href="#">BTTXF 130</a>
+                <a
+                  href="https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BTTXF130_2020-09.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  BTTXF 130
+                </a>
                 <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
               </div>
               <div className="container-dropdown">
-                <a href="#">BZN</a>
+                <a
+                  href="https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BZN_2020-09.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  BZN
+                </a>
                 <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
               </div>
               <div className="container-dropdown">
-                <a href="#">BRX</a>
+                <a
+                  href="https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BRX_2020-09.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  BRX
+                </a>
                 <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
               </div>
               <div className="container-dropdown">
-                <a href="#">BY</a>
+                <a
+                  href="https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BY_2020-09.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  BY
+                </a>
                 <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
               </div>
               <div className="container-dropdown">
-                <a href="#">BRN</a>
+                <a
+                  href="https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BRN_2020-09.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  BRN
+                </a>
                 <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
               </div>
               <div className="container-dropdown">
-                <a href="#">BXS</a>
+                <a
+                  href="https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BX_2020-09.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  BXS
+                </a>
                 <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
               </div>
               <div className="container-dropdown">
-                <a href="#">BXX</a>
+                <a
+                  href="https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BXX_2020-09.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  BXX
+                </a>
                 <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
               </div>
               <div className="container-dropdown">
-                <a href="#">BE-C </a>
+                <a
+                  href="https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BE_2020-09.pdf"
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  BE-C
+                </a>
                 <img src="images/Logo-Bollore-Films-COULEUR.png" alt="logob" />
               </div>
               <div className="container-dropdown">
-                <a href="#">PC-Standard</a>
+                <a href="#" target="blank" rel="noopener noreferrer">
+                  PC-Standard
+                </a>
                 <img src="images/logo.png" alt="logopc" id="logopc" />
               </div>
             </div>
           </div>
-          <a href="#">O Nas</a>
-          <a href="#">Kontakt</a>
+          <a href="#" onClick={moveToAboutUs}>
+            O Nas
+          </a>
+          <a href="#" onClick={moveToContactUs}>
+            Kontakt
+          </a>
         </div>
       </div>
     </>
@@ -558,7 +715,7 @@ function AboutUs1() {
     <>
       <div>
         <div>
-          <div className="container-about-us">
+          <div className="container-about-us" id="container-about-us">
             <div className="about-us">
               <h4>PackComplex</h4>
               <h1>Dlaczego warto nam zaufać?</h1>
@@ -576,7 +733,7 @@ function AboutUs1() {
           </div>
           <div className="container-about-us-description">
             <div className="parent">
-              <div className="column-one">
+              <div className="column-one" id="column-one">
                 <div className="section">
                   <div className="section-header">
                     <img
@@ -642,7 +799,7 @@ function AboutUs1() {
 
 function Form() {
   return (
-    <div className="form-main">
+    <div className="form-main" id="form-main">
       <div className="left-section">
         <h2 className="left-section-title">Skontaktuj się z nami!</h2>
         <p className="left-section-description">
@@ -661,7 +818,7 @@ function Form() {
 
       <div className="right-section">
         <div className="image-box">
-          <img src="images/pc_bg_.jpg"></img>
+          <img src="images/PC_Foto.jpg"></img>
         </div>
         <div className="text-content">
           <h1>Dane kontaktowe firmy</h1>
