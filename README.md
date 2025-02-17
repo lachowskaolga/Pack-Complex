@@ -1,6 +1,6 @@
 # Nowoczesna Strona Internetowa w React i Node.js
 
-![Szerokie zdjęcie](assets/images/ZE_Main.png)
+![Szerokie zdjęcie](public/images/ZE_Main.png)
 
 Nasza strona internetowa to połączenie nowoczesnych technologii frontendowych i backendowych, stworzona w **React** na froncie oraz **Node.js** na backendzie. Zapewnia płynne i dynamiczne doświadczenie użytkownika dzięki szeregowi funkcjonalności:
 
