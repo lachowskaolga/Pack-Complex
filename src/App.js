@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useState } from "react";
 const products = [
   {
     mainProductFoto: "images/AF.jpg",
@@ -9,6 +10,7 @@ const products = [
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
     description:
       "Folia o wysokim połysku i skutecznej ochronie przeciwmgielnej, wydajna już przy 11 mikronach, łatwa w użyciu na liniach flow-pack i L-Sealer, z doskonałymi właściwościami obkurczania. Idealne rozwiązanie dla branży spożywczej i sektorów wymagających niezawodnej ochrony produktów.",
+    link: "https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_AF.pdf",
   },
   {
     mainProductFoto: "images/bio.jpg",
@@ -17,6 +19,7 @@ const products = [
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
     description:
       "Folia termokurczliwa Exlfilm eco®MP zapewnia krótkie czasy obkurczania, maksymalizując wydajność produkcji, a dzięki mocnym zgrzewom i wysokiej wytrzymałości skutecznie chroni produkty podczas szybkiego pakowania i transportu.",
+    link: "",
   },
 
   {
@@ -26,6 +29,7 @@ const products = [
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
     description:
       "Exlfilm fresh®BC to mikroperforowana folia termokurczliwa o wysokim stopniu obkurczania, idealna do automatycznych linii pakujących, zapewniająca optymalną wymianę gazową i doskonałą jakość produktu, szczególnie w branży piekarniczej.",
+    link: "https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_BC.pdf",
   },
   {
     mainProductFoto: "images/bread.jpg",
@@ -34,6 +38,7 @@ const products = [
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
     description:
       "Folia termokurczliwa do szybkich maszyn pakujących, idealna dla branży piekarniczej.Dzięki mikroperforacji zapewnia optymalną wymianę gazową, co pozwala zachować wysoką jakość produktów, a różne wzory perforacji dostosowują się do potrzeb produktu.",
+    link: "https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_BF.pdf",
   },
   {
     mainProductFoto: "images/bio.jpg",
@@ -42,6 +47,7 @@ const products = [
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
     description:
       "Folia termokurczliwa Exlfilm eco®BioB pozwala przyspieszyć proces pakowania, zwiększając wydajność produkcji. Zapewnia też solidną ochronę produktów dzięki swojej wytrzymałości i mocnym zgrzewom.",
+    link: "",
   },
   {
     mainProductFoto: "images/BP_Pizza.jpg",
@@ -50,6 +56,7 @@ const products = [
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
     description:
       "Folia termokurczliwa zaprojektowana z myślą o szybkich maszynach pakujących, idealna do mrożonej żywności. Gwarantuje nie tylko doskonałą ochronę produktów, ale także zapewnia atrakcyjny wygląd opakowania, podkreślając walory wizualne.",
+    link: "https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_BP.pdf",
   },
 
   {
@@ -59,6 +66,7 @@ const products = [
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
     description:
       "Folia o wysokiej prędkości z krótkimi czasami obkurczania, co zwiększa wydajność produkcji. Oferuje doskonałą wytrzymałość, odporność na rozerwania i wysoką jakość zgrzewów. Idealna do branż takich jak farmaceutyki, przemysł papierniczy i mrożone produkty.",
+    link: "https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_FP26.pdf",
   },
   {
     mainProductFoto: "images/QSL-Main_High.jpg",
@@ -67,6 +75,7 @@ const products = [
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
     description:
       "Szybkoschnąca folia termokurczliwa o wyjątkowo wysokim współczynniku kurczenia, zapewniająca doskonały efekt 'bez zmarszczeń'. Doskonale sprawdza się w przypadku najbardziej wymagających produktów, od kalendarzy po pudełka czekoladek.",
+    link: "https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_QSL.pdf",
   },
   {
     mainProductFoto: "images/HG-Main_High.jpg",
@@ -75,6 +84,7 @@ const products = [
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
     description:
       "Folia termokurczliwa, zapewniająca wysoką wydajność produkcji dzięki krótkim czasom uszczelniania. Charakteryzuje się dużą wytrzymałością, odpornością na rozdarcia oraz doskonałymi właściwościami optycznymi.",
+    link: "https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_HG.pdf",
   },
   {
     mainProductFoto: "images/LTG-Main_High.jpg",
@@ -83,6 +93,8 @@ const products = [
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
     description:
       "Folia posiada niską siłę kurczenia, co sprawia, że delikatne produkty zachowują swój kształt. Dzięki niższej temperaturze kurczenia, jest idealnym rozwiązaniem dla produktów wymagających łagodnego procesu pakowania i folii z bardzo wysoką odpornością na uszkodzenia.",
+
+    link: "https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_LSF.pdf",
   },
   {
     mainProductFoto: "images/LTG-Main_High.jpg",
@@ -91,6 +103,7 @@ const products = [
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
     description:
       "Główne cechy to niska grubość, wyższa wytrzymałość na rozciąganie oraz dłuższa długość rolki, co zmniejsza przestoje maszyn. Dzięki temu poprawia się wydajność i oszczędność kosztów, a także wymaga mniej miejsca do przechowywania.",
+    link: "https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_LTG.pdf",
   },
   {
     mainProductFoto: "images/PL.png",
@@ -99,6 +112,7 @@ const products = [
     companyLogo: "images/MainLogo-Fibope-Cropped-removebg-preview.png",
     description:
       "Wysoka wytrzymałość na rozciąganie, doskonała odporność na przebicia, zapewnia bardzo mocne uszczelnienie, jest wszechstronna i może być używana w różnych zastosowaniach, a także charakteryzuje się odpornością na poślizg w wysokich temperaturach.",
+    link: "https://www.fibope.pt/wp-content/uploads/sites/11/2023/09/FIBOPE_LSF.pdf",
   },
   {
     mainProductFoto: "images/1B.png",
@@ -106,6 +120,7 @@ const products = [
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
     description:
       "B-Nat® O to ultracienka folia opakowaniowa z zielonego polietylenu, w którym ponad 40% pochodzi z etanolu z trzciny cukrowej, co zmniejsza ślad węglowy. Jest recyklingowalna, zapewnia doskonałą prezentację półkową oraz wysoką spójność, idealna do multipakowania i maszyn wysokiej prędkości.",
+    link: "https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BNAT-O_2020-09.pdf",
   },
   {
     mainProductFoto: "images/bri.png",
@@ -113,6 +128,7 @@ const products = [
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
     description:
       "Folia charakteryzuje się wysoką siłą spójności, jest bardzo cienka, co sprzyja oszczędnościom zasobów. Ponadto jest recyklingowalna i doskonale nadaje się do pakowania zarówno produktów przemysłowych, jak i konsumpcyjnych.",
+    link: "https://www.bollorefilms.com/wp-content/uploads/2022/09/Bolphane-R3-BRi_V2021-07_uk.pdf",
   },
   {
     mainProductFoto: "images/BTT.png",
@@ -120,6 +136,7 @@ const products = [
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
     description:
       "Folia charakteryzuje się doskonałą kurczliwością oraz szybkim uszczelnianiem przy niskiej temperaturze. Posiada właściwości zmniejszające tarcie (hot slip). Zwiększona sztywność optymalizuje jej przejście przez maszyny o wysokiej prędkości, a poprawiona jakość optyczna zapewnia doskonałą prezentację na półce.",
+    link: "https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BTT_2020-09.pdf",
   },
   {
     mainProductFoto: "images/110.png",
@@ -127,6 +144,7 @@ const products = [
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
     description:
       "Folia oferuje szerokie okno robocze, umożliwiając jej użycie na szerokiej gamie urządzeń. Posiada te same właściwości mechaniczne co tradycyjna folia 15µm, a jej wyjątkowa odporność na uderzenia, wysoka siła uszczelniania i doskonała siła spójności zapewniają jej niezawodność w różnych zastosowaniach.",
+    link: "https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BTTX110_2020-09.pdf",
   },
   {
     mainProductFoto: "images/130.png",
@@ -134,6 +152,7 @@ const products = [
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
     description:
       "Folia charakteryzuje się niską siłą kurczenia, co zapobiega zniekształceniu elastycznych produktów oraz wysokim procentem wolnego kurczenia przy niskiej temperaturze. Jest także odporna na rozdarcia i rozciąganie, a jej szerokie okno robocze sprawia, że może być stosowana w różnych urządzeniach.",
+    link: "https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BTTXF130_2020-09.pdf",
   },
   {
     mainProductFoto: "images/BZN.png",
@@ -141,6 +160,7 @@ const products = [
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
     description:
       "Folia cechuje się wyjątkową wytrzymałością i odpornością na przebicia, a jej szerokie okno robocze umożliwia stosowanie na różnych urządzeniach. Zapewnia również mocne uszczelnienia w różnych warunkach przetwarzania.",
+    link: "https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BZN_2020-09.pdf",
   },
   {
     mainProductFoto: "images/BRX.png",
@@ -148,6 +168,7 @@ const products = [
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
     description:
       "Niska siła kurczenia eliminuje odkształcenia cienkich produktów, a folia jest usieciowana dla zwiększenia wytrzymałości i twardości. Charakteryzuje się szerokim zakresem roboczym na większości urządzeń uszczelniających, idealnie nadaje się do produktów o nieregularnym kształcie lub ostrych krawędziach.",
+    link: "https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BRX_2020-09.pdf",
   },
   {
     mainProductFoto: "images/BY.png",
@@ -155,13 +176,15 @@ const products = [
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
     description:
       "Szybkie uszczelnianie i efektywność w trakcie podgrzewania, właściwości 'hot slip' po kurczeniu. Optymalna wydajność i produktywność przy wyjątkowym uzysku, niskie temperatury oraz mniejsze zużycie energii przy wysokim stopniu kurczenia.",
+    link: "https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BY_2020-09.pdf",
   },
   {
     mainProductFoto: "images/BRN.png",
     nameProduct: "BRN",
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
     description:
-      "Ultracienka folia na bazie bi-orientowanego polietylenu (BO-PE), przeznaczona do pakowania delikatnych, elastycznych produktów, takich jak artykuły papiernicze i tekstylia. W warunkach wysokiej prędkości przetwarzania, BRN zapewnia wysoką wydajność przy aplikacjach wymagających niskiego skurczu, kontrolując siły skurczu w szerszym zakresie temperatur niż tradycyjne folie termokurczliwe.",
+      "Ultracienka folia BO-PE na bazie bi-orientowanego polietylenu (BO-PE) przeznaczona do pakowania delikatnych produktów, takich jak artykuły papiernicze i tekstylia. Przy wysokiej prędkości przetwarzania zapewnia wydajność i kontrolę skurczu w szerszym zakresie temperatur niż tradycyjne folie termokurczliwe.",
+    link: "https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BRN_2020-09.pdf",
   },
   {
     mainProductFoto: "images/BX.png",
@@ -169,6 +192,7 @@ const products = [
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
     description:
       "Folia oferuje wysoką wytrzymałość spójności, co czyni ją idealną do zastosowań multipack, oraz dużą sztywność dla optymalnej wydajności maszyn. Została zaprojektowana do współpracy z maszynami do uszczelniania z jonizacją, zapewniając wyjątkową jakość optyczną.",
+    link: "https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BX_2020-09.pdf",
   },
   {
     mainProductFoto: "images/BXX.png",
@@ -176,6 +200,7 @@ const products = [
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
     description:
       "Folia specjalnie dedykowana do uszczelniania elektrostatycznego, charakteryzująca się wyjątkową płaskością, sztywnością i właściwościami antypoślizgowymi, co zapewnia wysoką wydajność maszyn. Oferuje także doskonałe właściwości optyczne.",
+    link: "https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BXX_2020-09.pdf",
   },
   {
     mainProductFoto: "images/BEC.png",
@@ -183,11 +208,23 @@ const products = [
     companyLogo: "images/Logo-Bollore-Films-COULEUR.png",
     description:
       "Folia charakteryzuje się wszechstronnością, zoptymalizowaną wstępną perforacją, która umożliwia kontrolowane kurczenie się i łatwiejszą konfigurację. Posiada wysoką wytrzymałość spoiny oraz dobre właściwości optyczne.",
+    link: "https://www.bollorefilms.com/wp-content/uploads/2020/09/UK_Bolphane-R3_BE_2020-09.pdf",
   },
   {
-    mainProductFoto: "images/bg-top.jpg",
-    nameProduct: "PC-Standard",
+    mainProductFoto: "images/Rolki_PC.png",
+    nameProduct: "PC Standard",
     companyLogo: "images/PCSTANDARD.png",
+    description:
+      "Mocna, pięciowarstwowa folia o wysokiej kurczliwości, doskonałej optyce i dużej wytrzymałości na rozciąganie. Nadaje się do zgrzewarek kątowych, maszyn automatycznych i typu flow-pack, zapewniając świetną zgrzewalność i trwałość zgrzewu.",
+    link: "/docs/PC Standard_folia.pdf",
+  },
+  {
+    mainProductFoto: "images/Rolki_PC.png",
+    nameProduct: "PC EcoStandard",
+    companyLogo: "images/PCSTANDARD.png",
+    description:
+      "PC EcoStandard to mocna, pięciowarstwowa folia POF o bardzo dobrej kurczliwości, właściwościach optycznych i wysokiej wytrzymałości na rozciąganie. Może być stosowana na ręcznych zgrzewarkach kątowych oraz szybkich maszynach automatycznych, a także na maszynach HFFS. ",
+    link: "/docs/PC EcoStandard_folia.pdf",
   },
 ];
 
@@ -668,7 +705,6 @@ function ProductCarousel() {
   };
 
   const productsDetail = products;
-  const numProducts = productsDetail.length;
   return (
     <div className="carousel-container" id="products-section">
       <div className="carousel">
@@ -693,7 +729,12 @@ function ProductCarousel() {
                 <div className="carousel-card-heading">
                   {product.description}
                 </div>
-                <button id="carousel-card-button">Więcej informacji</button>
+                <button
+                  id="carousel-card-button"
+                  onClick={() => window.open(product.link, "_blank")}
+                >
+                  Więcej informacji
+                </button>
               </div>
             </div>
           ))}
@@ -705,9 +746,6 @@ function ProductCarousel() {
 
 function Line() {
   return <div id="line"></div>;
-}
-function Line2() {
-  return <div id="line2"></div>;
 }
 
 function AboutUs1() {
@@ -787,7 +825,7 @@ function AboutUs1() {
               </div>
 
               <div className="column-two">
-                <img src="images/Rectangle1.png"></img>
+                <img src="images/Rectangle1.png" alt="img1"></img>
               </div>
             </div>
           </div>
@@ -798,6 +836,38 @@ function AboutUs1() {
 }
 
 function Form() {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [status, setStatus] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const data = {
+      email: email,
+      message: message,
+    };
+
+    try {
+      const response = await fetch("http://localhost:5000/send-mail", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (response.status === 200) {
+        setStatus("Wiadomość została wysłana!");
+        setEmail("");
+        setMessage("");
+      } else {
+        const errorMessage = await response.text();
+        setStatus(`Wystąpił błąd: ${errorMessage}`);
+      }
+    } catch (error) {
+      setStatus("Wystąpił błąd sieciowy. Spróbuj ponownie.");
+    }
+  };
+
   return (
     <div className="form-main" id="form-main">
       <div className="left-section">
@@ -807,10 +877,28 @@ function Form() {
           zespół skontaktuje się z Tobą tak szybko, jak to możliwe.
         </p>
         <div className="left-section-content">
-          <input className="small-box" placeholder="E-Mail"></input>
-          <input className="large-box" placeholder="Wiadomość..."></input>
+          <form onSubmit={handleSubmit}>
+            <input
+              className="small-box"
+              placeholder="E-Mail"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            ></input>
+            <input
+              className="large-box"
+              placeholder="Wiadomość..."
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            ></input>
 
-          <div className="form-button">Wyślij</div>
+            <button
+              className="form-button"
+              type="submit"
+              onClick={handleSubmit}
+            >
+              Wyślij
+            </button>
+          </form>
         </div>
       </div>
 
@@ -818,7 +906,7 @@ function Form() {
 
       <div className="right-section">
         <div className="image-box">
-          <img src="images/PC_Foto.jpg"></img>
+          <img src="images/PC_Foto.jpg" alt="PC1"></img>
         </div>
         <div className="text-content">
           <h1>Dane kontaktowe firmy</h1>
